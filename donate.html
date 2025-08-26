@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support GreenEarth Initiative by making a donation.">
+    <meta name="keywords" content="donate, environmental conservation, sustainability, GreenEarth Initiative">
+    <meta name="author" content="GreenEarth Initiative">
+    <title>Donate - GreenEarth Initiative</title>
+</head>
+<body>
+    <header>
+        <h1>Donate to GreenEarth Initiative</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Make a Donation</h2>
+        <p>Your support helps us advance our mission to promote environmental conservation and sustainability. Thank you for your generosity!</p>
+
+        <section>
+            <h3>Donation Form</h3>
+            <form action="submit_donation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Donation Amount ($):</label>
+                <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Other Ways to Support Us</h3>
+            <p>You can also support us through volunteering or organizing fundraising events. Please <a href="contact.html">contact us</a> for more details.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> GreenEarth Initiative. All rights reserved.</p>
+    </footer>
+    <script>
+        const yearSpan = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    </script>
+</body>
+</html>

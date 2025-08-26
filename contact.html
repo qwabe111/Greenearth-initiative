@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with GreenEarth Initiative to learn about our sustainability programs or join our efforts to make a difference.">
+    <meta name="keywords" content="Contact GreenEarth Initiative, environmental conservation, sustainability, eco-friendly, volunteer">
+    <meta name="author" content="GreenEarth Initiative">
+    <meta property="og:title" content="Contact Us - GreenEarth Initiative">
+    <meta property="og:description" content="Contact GreenEarth Initiative to learn more about our sustainability programs or get involved.">
+    <title>Contact Us - GreenEarth Initiative</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or would like to get involved with GreenEarth Initiative, please feel free to reach out to us using the contact form below or through the contact information provided.</p>
+        
+        <section>
+            <h3>Contact Form</h3>
+            <form id="contactForm" action="mailto:info@greenearth.org" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> <a href="mailto:info@greenearth.org">info@greenearth.org</a></p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Green Street, Eco City, EC 12345</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> GreenEarth Initiative. All rights reserved.</p>
+    </footer>
+    <script>
+        const yearSpan = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    </script>
+</body>
+</html>
