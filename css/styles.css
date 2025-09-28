@@ -1,0 +1,161 @@
+/* Homepage Logo Styling */
+header .logo {
+    height: 100px;          /* Bigger logo */
+    width: auto;            /* Maintain aspect ratio */
+    display: block;         
+    margin: 0 auto 15px auto; /* Center the logo and add space below */
+    border-radius: 20px;    /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;         /* Make sure logo doesn't overflow on small screens */
+}
+
+/* Stack homepage images vertically */
+.home-image {
+    margin: 20px 0;         
+    text-align: center;     
+}
+
+.home-image img {
+    max-width: 90%;         
+    height: auto;
+    border-radius: 15px;    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;  /* Use inline-block for better wrapping on small screens */
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* change from fixed to relative for mobile responsiveness */
+    width: 100%;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #004d40;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;       /* Stack nav items vertically on tablets and mobile */
+        margin: 10px 0;
+    }
+    main {
+        padding: 1rem;        /* Reduce padding for smaller screens */
+    }
+    header .logo {
+        height: 80px;         /* Slightly smaller logo on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        height: 60px;         /* Smaller logo for mobile screens */
+    }
+    nav ul li a {
+        font-size: 0.9rem;    /* Slightly smaller font on mobile */
+    }
+    main {
+        padding: 0.5rem;
+    }
+}

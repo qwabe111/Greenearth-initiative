@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - GreenEarth Initiative</title>
+    <meta name="description" content="GreenEarth Initiative is dedicated to environmental conservation and sustainability. Join us in making a difference.">
+    <title>GreenEarth Initiative</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img src="_images/green.png" alt="GreenEarth Initiative Logo">
+        <img src="_images/green.png" alt="GreenEarth Initiative Logo" class="logo">
         <h1>Welcome to GreenEarth Initiative</h1>
+        <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="donate.html">Donate</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>GreenEarth Initiative is dedicated to environmental conservation and sustainability. We work towards creating a greener, more sustainable future.</p>
-        </section>
+        <h2>Our Mission</h2>
+        <p>GreenEarth Initiative is dedicated to environmental conservation and sustainability. We work towards creating a greener, more sustainable future.</p>
+        
+        <!-- Responsive Images -->
+        <img 
+            src="_images/green2.jpeg" 
+            srcset="_images/green2-small.jpeg 480w, _images/green2.jpeg 1024w" 
+            sizes="(max-width: 600px) 480px, 1024px" 
+            alt="Sustainability Project" 
+            class="content-img">
 
-        <section>
-            <h3>Our Projects</h3>
-            <img src="_images/green2.jpeg" alt="Volunteers planting trees in a local park">
-            <img src="_images/green3.jpeg" alt="Community members participating in a recycling drive">
-        </section>
+        <img 
+            src="_images/green3.jpeg" 
+            srcset="_images/green3-small.jpeg 480w, _images/green3.jpeg 1024w" 
+            sizes="(max-width: 600px) 480px, 1024px" 
+            alt="Green Energy Efforts" 
+            class="content-img">
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 GreenEarth Initiative. All rights reserved.</p>
+        <p>&copy; 2025 GreenEarth Initiative. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
